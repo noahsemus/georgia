@@ -18,16 +18,24 @@ canvas {
 #topFlag h1 {
     display: inline-block;
     max-width: 60vw;
+    max-height: 50vh;
     color: yellow;
     text-decoration: underline;
     position: absolute;
     right: 40px;
     bottom: 20px;
-    font-size: 9.5vw;
+    font-size: 5vw;
+    hyphens: none;
     margin-top: 20px;
     margin-bottom: 0px;
     margin-right: 40px;
     text-align: right;
+}
+
+@media (min-width: 1200px){
+    #topFlag h1 {
+        font-size: 65px;
+    }
 }
 
 #topFlag h1:hover {

@@ -2,7 +2,7 @@ let customText, visText;
 let xPos;
 
 function preload(){
-    customText = loadFont('noahsemus.com/georgia/assets/georgia.otf')
+    customText = loadFont('assets/myFont.otf')
 }
 
 function setup(){

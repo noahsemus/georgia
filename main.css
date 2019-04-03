@@ -16,6 +16,8 @@ canvas {
 }
 
 #topFlag h1 {
+    display: inline-block;
+    max-width: 60vw;
     color: yellow;
     text-decoration: underline;
     position: absolute;

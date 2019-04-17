@@ -70,3 +70,29 @@ Barba.Pjax.getTransition = function() {
 };
 
 Barba.Pjax.start();
+
+function vendorStart() {
+    
+    new TypeIt('.deepLink', {
+        speed: 50,
+        waitUntilVisible: true,
+        cursor: false,
+        loop: true,
+        loopDelay: 5000,
+        
+    }).go();
+    
+    new TypeIt('#homeLink', {
+        speed: 10,
+        waitUntilVisible: false,
+        cursor: false,
+        
+    }).go();
+}
+
+vendorStart();
+
+
+Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
+    vendorStart();
+});

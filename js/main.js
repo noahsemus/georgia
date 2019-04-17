@@ -13,9 +13,7 @@ var transitionAnimation = Barba.BaseTransition.extend({
   var outTransition = new TimelineMax();
       
       outTransition
-      .to('#topFlag a', 1, {opacity:0})
-      .to('#topFlag h1', 1, {opacity:0})
-      .to('#topFlagDeep a', 1, {opacity:0})
+      .to(['#topFlag a', '#topFlag h1', '#topFlagDeep a'], 1, {opacity:0})
       .to('#topFlagBG', 1, {height: '110%', ease: Power4.easeInOut, onComplete: function(){resolve();
     }})
       

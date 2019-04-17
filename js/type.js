@@ -14,4 +14,11 @@ $(document).ready(function() {
         cursor: false,
         
     }).go();
+    
+    new TypeIt('#topFlag h1', {
+        speed: 30,
+        waitUntilVisible: true,
+        cursor: false,
+        
+    }).go();
 });

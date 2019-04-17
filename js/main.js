@@ -69,6 +69,13 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
         
     }).go();
     
+    new TypeIt('#topFlag h1', {
+        speed: 30,
+        waitUntilVisible: true,
+        cursor: false,
+        
+    }).go();
+    
 });
 
 

@@ -75,44 +75,7 @@
 <script src="../js/main.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="../js/typeit.min.js"></script>
-    
-<script>
-    
-    new TypeIt('.deepLink', {
-        speed: 50,
-        waitUntilVisible: false,
-        cursor: false,
-        loop: true,
-        loopDelay: 5000,
-        
-    }).go();
-    
-    new TypeIt('#homeLink', {
-        speed: 10,
-        waitUntilVisible: false,
-        cursor: false,
-        
-    }).go();
-    
-</script>
-    
-    
-<script>
-    
-$(document).ready(function($) {
-    Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container) {
-        new TypeIt('.deepLink', {
-            speed: 50,
-            waitUntilVisible: true,
-            cursor: false,
-            loop: true,
-            loopDelay: 5000,
-
-        }).go();
-  });
-});
-    
-</script>
+<script src="/js/type.js" type="text/javascript"></script>
     
     
 </html>

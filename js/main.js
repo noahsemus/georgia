@@ -13,6 +13,9 @@ var transitionAnimation = Barba.BaseTransition.extend({
   var outTransition = new TimelineMax();
       
       outTransition
+      .to('#topFlag a', 1, {opacity:0})
+      .to('#topFlag h1', 1, {opacity:0})
+      .to('#topFlagDeep a', 1, {opacity:0})
       .to('#topFlagBG', 1, {height: '110%', ease: Power4.easeInOut, onComplete: function(){resolve();
     }})
       
@@ -47,8 +50,10 @@ Barba.Pjax.getTransition = function() {
 };
 
 Barba.Pjax.start();
-/*
-function vendorStart() {
+
+
+
+Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container, rawHTML) {
     
     new TypeIt('.deepLink', {
         speed: 50,
@@ -59,35 +64,6 @@ function vendorStart() {
         
     }).go();
     
-    new TypeIt('#homeLink', {
-        speed: 10,
-        waitUntilVisible: false,
-        cursor: false,
-        
-    }).go();
-}
-
-vendorStart();
-
-
-Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container, rawHTML) {
-    
-    $(document).foundation();
-    
-    vendorStart();
 });
-*/
 
-Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container) {
-    $(container).find('script').each(function (i, script) {
-        var $script = $(script);
-        $.ajax({
-            url: $script.attr('src'),
-            cache: true,
-            dataType: 'script',
-            success: function () {
-                $script.trigger('load');
-            }
-        });
-    });
-});
+

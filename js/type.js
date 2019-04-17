@@ -9,7 +9,7 @@ $(document).ready(function() {
     }).go();
     
     new TypeIt('#homeLink', {
-        speed: 10,
+        speed: 30,
         waitUntilVisible: false,
         cursor: false,
         

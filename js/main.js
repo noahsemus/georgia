@@ -13,9 +13,9 @@ var transitionAnimation = Barba.BaseTransition.extend({
   var outTransition = new TimelineMax();
       
       outTransition
-      .to(['#topFlag a', '#topFlag h1', '#topFlagDeep a'], 1, {opacity:0})
+      .to(['#topFlag a', '#topFlag h1', '#topFlagDeep a'], .5, {opacity:0})
       .to('#topFlagBG', 1, {height: '110%', ease: Power4.easeInOut, onComplete: function(){resolve();
-    }})
+    }}, 0)
       
       .to('#topFlagBG', 1, {height: '50%', ease: Power4.easeInOut})
       
@@ -34,7 +34,7 @@ var transitionAnimation = Barba.BaseTransition.extend({
       
       //New Container
       
-      TweenMax.to($el, 0.1, {display:'auto', onComplete:function(){_this.done();}
+      TweenMax.to($el, 0, {display:'auto', onComplete:function(){_this.done();}
             });
       
     }
@@ -59,6 +59,13 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
         cursor: false,
         loop: true,
         loopDelay: 5000,
+        
+    }).go();
+    
+    new TypeIt('#homeLink', {
+        speed: 30,
+        waitUntilVisible: false,
+        cursor: false,
         
     }).go();
     

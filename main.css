@@ -62,6 +62,16 @@ canvas {
     align-items: flex-start;
 }
 
+#topFlagBG{
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    background: yellow;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
 #topFlag a {
     width: 100%;
     display: inline-block;
@@ -84,9 +94,72 @@ canvas {
     margin: 0px;
 }
 
+#bottomFlagBG{
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    background: black;
+    top: 50vh;
+    left: 0px;
+    z-index: -9999999;
+}
+
 .linkContain{
     position: absolute;
     bottom: 20px;;
     width: 200px;
     height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Deep Pages */
+
+
+
+
+
+
+
+
+#topFlagDeep{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: yellow;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: scroll;
+}
+
+#topFlagDeep a{
+    display: inline-block;
+    width: auto;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#flagDeep{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#homeLink{
+    position: fixed;
+    right: 30px;
+    text-align: right;
 }

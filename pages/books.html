@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+    <title>georgia</title>
+    <link rel="stylesheet" href="../main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+</head>
+    
+<body id='wrapper'>
+    
+    <div id="topFlagBG"></div>
+    <div id="bottomFlagBG"></div>
+    
+    <main class='barba-container'>
+
+        <div id="flagDeep">
+
+            <div id="topFlagDeep">
+                <a href="../index.html" id="homeLink">home</a>
+                
+                <a href="somewhere" class="deepLink">100 Years of Solitude</a>
+                <a href="somewhere" class="deepLink">Jaws</a>
+                <a href="somewhere" class="deepLink">The Great Gatsby</a>
+                <a href="somewhere" class="deepLink">Harry Potter and the Deathly Hallows</a>
+                <a href="somewhere" class="deepLink">How I Became Someone Else</a>
+                <a href="somewhere" class="deepLink">The Nix</a>
+                <a href="somewhere" class="deepLink">The Alchemist</a>
+                <a href="somewhere" class="deepLink">Freakonomics</a>
+                <a href="somewhere" class="deepLink">Death From Above</a>
+                <a href="somewhere" class="deepLink">Superman: Issue #143</a>
+                <a href="somewhere" class="deepLink">Gordon Ramsay: Cooking Made Easy</a>
+                <a href="somewhere" class="deepLink">Elements of Typographic Style</a>
+                <a href="somewhere" class="deepLink">Star Wars: A New Hope (Novelized)</a>
+                <a href="somewhere" class="deepLink">American History from A to Z</a>
+                <a href="somewhere" class="deepLink">Mankind's Only Hope</a>
+                <a href="somewhere" class="deepLink">The Martian</a>
+                <a href="somewhere" class="deepLink">Catcher in the Rye</a>
+                <a href="somewhere" class="deepLink">To Kill a Mockingbird</a>
+                <a href="somewhere" class="deepLink">Karl Marx: Communist Manifesto</a>
+                <a href="somewhere" class="deepLink">Fuck Karl Marx</a>
+                <a href="somewhere" class="deepLink">Origin of Everything</a>
+                <a href="somewhere" class="deepLink">50 Shades of Gray</a>
+                <a href="somewhere" class="deepLink">Twilight: New Moon</a>
+                <a href="somewhere" class="deepLink">Origami: How it Changed my Gender</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+                <a href="somewhere" class="deepLink">The Rise and Fall of Rome: Volume IV</a>
+            </div>
+
+            <div id="bottomFlagDeep">
+
+            </div>
+
+        </div>
+    </main>
+</body>
+    
+<script src="../js/p5.js"></script>
+<script src="../addons/p5.dom.min.js"></script>
+<script src="../addons/p5.sound.min.js"></script>
+<script src="../js/homeText.js"></script>
+<script src="../js/barba.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="../js/typeit.min.js"></script>
+    
+<script>
+    
+    new TypeIt('.deepLink', {
+        speed: 50,
+        waitUntilVisible: true,
+        cursor: false,
+        loop: true,
+        loopDelay: 5000,
+        
+    }).go();
+    
+    new TypeIt('#homeLink', {
+        speed: 10,
+        waitUntilVisible: false,
+        cursor: false,
+        
+    }).go();
+    
+</script>
+    
+    
+<script>
+    
+$(document).ready(function($) {
+    Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container) {
+        new TypeIt('.deepLink', {
+            speed: 50,
+            waitUntilVisible: true,
+            cursor: false,
+            loop: true,
+            loopDelay: 5000,
+
+        }).go();
+  });
+});
+    
+</script>
+    
+    
+</html>

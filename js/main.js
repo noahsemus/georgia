@@ -61,7 +61,7 @@ var transitionAnimation02 = Barba.BaseTransition.extend({
       .to('.bottomFlagBG', 1, {zIndex: 9999999999, top: 0, height:'100%', ease: Power4.easeInOut, onComplete: function(){resolve();
     }}, 0)
       
-      .to('.bottomFlagBG', 0, {zIndex: 0, ease: Power4.easeInOut})
+      .to('.bottomFlagBG', 0, {zIndex: -9999999999999, ease: Power4.easeInOut})
       
     });
     

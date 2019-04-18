@@ -15,9 +15,10 @@ var transitionAnimation = Barba.BaseTransition.extend({
       outTransition
       .to(['#topFlag a', '#topFlag h1', '.topFlagDeep a'], .5, {opacity:0})
       .to('#topFlagBG', 1, {zIndex: 9999999, height: '110%', ease: Power4.easeInOut, onComplete: function(){resolve();
-    }}, 0)
+    }}, .3)
       
-      .to('#topFlagBG', 0, {zIndex: 0, height: '50%', ease: Power4.easeInOut})
+      .to('#topFlagBG', 0, {zIndex: 0, ease: Power4.easeInOut})
+      .to('#topFlagBG', 1, {zIndex: 0, height: '50%', ease: Power4.easeInOut})
       
     });
     

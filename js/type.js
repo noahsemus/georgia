@@ -21,4 +21,18 @@ $(document).ready(function() {
         cursor: false,
         
     }).go();
+    
+    new TypeIt('#bottomFlagText', {
+        speed: 20,
+        waitUntilVisible: true,
+        cursor: false,
+        
+    }).go();
+    
+    new TypeIt('.deepNav a', {
+        speed: 200,
+        waitUntilVisible: false,
+        cursor: false,
+        
+    }).go();
 });

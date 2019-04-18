@@ -201,3 +201,7 @@ canvas {
     flex-direction: row;
     z-index: 100;
 }
+
+.highlight{
+    color: yellow;
+}

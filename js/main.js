@@ -231,7 +231,7 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
     }).go();
     
     new TypeIt('#bottomFlagText', {
-        speed: 20,
+        speed: 10,
         waitUntilVisible: true,
         cursor: false,
         

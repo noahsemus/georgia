@@ -24,16 +24,23 @@ canvas {
     position: absolute;
     right: 40px;
     bottom: 20px;
-    font-size: 5vw;
+    font-size: 5vh;
     hyphens: none;
     margin-top: 20px;
     margin-bottom: 0px;
     text-align: right;
+    overflow:scroll;
 }
 
 @media (min-width: 1200px){
     #topFlag h1 {
-        font-size: 65px;
+        font-size: 50px;
+    }
+}
+
+@media (max-height: 500px){
+    #topFlag h1 {
+        font-size: 7vh;
     }
 }
 

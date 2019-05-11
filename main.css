@@ -211,3 +211,9 @@ canvas {
 .highlight{
     color: yellow;
 }
+
+.archiveIMG {
+    max-height: 70vh;
+    margin-bottom: 40px;
+    border: 1px solid black;
+}
